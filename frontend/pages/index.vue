@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import PageTitle from '~/components/PageTitle.vue';
+import ToVoteLink from '~/components/vote/ToVoteLink.vue';
+
 definePageMeta({
   layout: 'default',
 })

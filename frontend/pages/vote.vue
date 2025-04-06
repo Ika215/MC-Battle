@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import BattleMovie from '~/components/BattleMovie.vue'
+import PageTitle from '~/components/PageTitle.vue'
+import VoteButton from '~/components/vote/VoteButton.vue'
+import VoteResult from '~/components/vote/VoteResult.vue'
+
 definePageMeta({
   layout: 'default',
 })
