@@ -1,0 +1,30 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: MC-Battle サービスに使用するAPI
+  description: MC-Battle サービスに使用するAPI仕様書
+
+host: localhost:8080
+basePath: /api
+
+schemes:
+  - http
+
+paths:
+  /users/{userId}:
+    get:
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          type: integer
+      responses:
+        200:
+          description: User
+          schema:
+            type: array
+            properties: 
+              id:
+                type: integer
+              name:
+                type: string
